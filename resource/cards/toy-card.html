@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(209, 194, 194);
+        }
+        .wrapper{
+            /* width: 100%;
+            height: 100vh; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background: #0c1022;
+            width: 320px;
+            height: 420px;
+            margin: 10px;
+            box-shadow: 0 0 5PX #6f7172;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            text-align: center !important;
+        }
+        .card::before{
+            background: #f0f6f9;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            top: -50%;
+            transform: skewY(345deg);
+            transition: 0.5s ease-in;
+        }
+        .card:hover::before{
+            top: -70%;
+            transform: skewY(390deg);
+        }
+        .image{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img{
+            max-width: 100%;
+            transition: 0.5s ease-in;
+        }
+        .card:hover .image img{
+            width: 80%;
+        }
+        .about-product{
+            position: absolute;
+            bottom: -50px !important;
+            left: 20%;
+            color: #fff !important;
+            text-align: center;
+            transition: 0.5s ease-in;
+        }
+        .card:hover .about-product{
+            bottom: 20px !important;
+        }
+        .button{
+            color: #fff;
+            width: 150px;
+            background: darkslategray  !important;
+            border-color: #0c1022 !important;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/dancing-cactus.html"><img src="Images/Toys/1.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Dancing Cactus</h3>
+                <h4>INR 599.<small>00</small></h4>
+                <a href="../page/Toy/dancing-cactus.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/doll-house.html"><img src="Images/Toys/2.png" alt="" width="500px" height="210px">
+</a>            </div>
+            <div class="about-product text-center">
+                <h3>Doll House</h3>
+                <h4>INR 1999.<small>00</small></h4>
+                <a href="../page/Toy/doll-house.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/stack-rings.html"><img src="Images/Toys/3.png" alt="" width="300px" height="210px">
+</a>            </div>
+            <div class="about-product text-center">
+                <h3>Stack Rings</h3>
+                <h4>INR 299.<small>00</small></h4>
+                <a href="../page/Toy/stack-rings.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/teddy-bear.html"><img src="Images/Toys/4.png" alt="" width="500px" height="210px">
+</a>            </div>
+            <div class="about-product text-center">
+                <h3>Teddy Bear</h3>
+                <h4>INR 499.<small>00</small></h4>
+                <a href="../page/Toy/teddy-bear.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/beauty-kit.html"><img src="Images/Toys/5.png" alt="" width="500px" height="210px">
+</a>            </div>
+            <div class="about-product text-center">
+                <h3>Beauty Kit</h3>
+                <h4>INR 559.<small>00</small></h4>
+                <a href="../page/Toy/beauty-kit.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/robot.html"><img src="Images/Toys/6.png" alt="" width="200px" height="210px">
+</a>            </div>
+            <div class="about-product text-center">
+                <h3>Robot</h3>
+                <h4>INR 799.<small>00</small></h4>
+                <a href="../page/Toy/robot.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/xoxo-game.html"><img src="Images/Toys/7.png" alt="" width="500px" height="210px">
+</a>            </div>
+            <div class="about-product text-center">
+                <h3>XOXO Game</h3>
+                <h4>INR 199.<small>00</small></h4>
+                <a href="../page/Toy/xoxo-game.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/writing-tablet.html"><img src="Images/Toys/8.png" alt="" width="500px" height="210px">
+</a>            </div>
+            <div class="about-product text-center">
+                <h3>Writing Tablet</h3>
+                <h4>INR 299.<small>00</small></h4>
+                <a href="../page/Toy/writing-tablet.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/car.html"><img src="Images/Toys/9.png" alt="" width="350px" height="280px">
+</a>            </div>
+            <div class="about-product text-center">
+                <h3>Car</h3>
+                <h4>INR 749.<small>00</small></h4>
+                <a href="../page/Toy/car.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/tambola.html"><img src="Images/Toys/10.png" alt="" width="300px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Tambola</h3>
+                <h4>INR 249.<small>00</small></h4>
+                <a href="../page/Toy/tambola.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/rapid-rumble.html"><img src="Images/Toys/11.png" alt="" width="250px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Rapid Rumble</h3>
+                <h4>INR 799.<small>00</small></h4>
+                <a href="../page/Toy/rapid-rumble.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/walkie-talkie.html"><img src="Images/Toys/12.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Walkie Talkie</h3>
+                <h4>INR 999.<small>00</small></h4>
+                <a href="../page/Toy/walkie-talkie.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/carrom.html"><img src="Images/Toys/13.png" alt="" width="250px" height="200px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Carrom</h3>
+                <h4>INR 999.<small>00</small></h4>
+                <a href="../page/Toy/carrom.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/play-station.html"><img src="Images/Toys/14.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Play Station</h3>
+                <h4>INR 24499.<small>00</small></h4>
+                <a href="../page/Toy/play-station.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/unicorn.html"><img src="Images/Toys/15.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Unicorn</h3>
+                <h4>INR 229.<small>00</small></h4>
+                <a href="../page/Toy/unicorn.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Toy/edu-globe.html"><img src="Images/Toys/16.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Globe</h3>
+                <h4>INR 1799.<small>00</small></h4>
+                <a href="../page/Toy/edu-globe.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:rgb(209, 194, 194);
+        }
+        .wrapper{
+            /* width: 100%;
+            height: 100vh; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background: #0c1022;
+            width: 320px;
+            height: 420px;
+            margin: 10px;
+            box-shadow: 0 0 5PX #6f7172;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            text-align: center !important;
+        }
+        .card::before{
+            background: #f0f6f9;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            top: -50%;
+            transform: skewY(345deg);
+            transition: 0.5s ease-in;
+        }
+        .card:hover::before{
+            top: -70%;
+            transform: skewY(390deg);
+        }
+        .image{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img{
+            max-width: 100%;
+            transition: 0.5s ease-in;
+        }
+        .card:hover .image img{
+            width: 80%;
+        }
+        .about-product{
+            position: absolute;
+            bottom: -50px !important;
+            left: 20%;
+            color: #fff;
+            text-align: center;
+            transition: 0.5s ease-in;
+        }
+        .card:hover .about-product{
+            bottom: 20px !important;
+        }
+        .button{
+            color: #fff;
+            width: 150px;
+            background: darkslategray  !important;
+            border-color: #0c1022 !important;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/laptop.html"><img src="Images/Electronics/laptop.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Laptop</h3>
+                <h4>INR 39,999.<small>00</small></h4>
+                <a href="../page/Electronics/laptop.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/smart-band.html"><img src="Images/Electronics/2.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Smart Band</h3>
+                <h4>INR 2299.<small>00</small></h4>
+                <a href="../page/Electronics/smart-band.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/digital-watch.html"><img src="Images/Electronics/1.png" alt="" width="300px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Digital Watch</h3>
+                <h4>INR 4999.<small>00</small></h4>
+                <a href="../page/Electronics/digital-watch.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/headphone.html"><img src="Images/Electronics/headphones.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Headphone</h3>
+                <h4>INR 1799.<small>00</small></h4>
+                <a href="../page/Electronics/headphone.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/speaker.html"><img src="Images/Electronics/speakers.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Speaker</h3>
+                <h4>INR 9999.<small>00</small></h4>
+                <a href="../page/Electronics/speaker.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/tv.html"><img src="Images/Electronics/tv.png" alt="" width="250px" height="190px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>T.V.</h3>
+                <h4>INR 25,999.<small>00</small></h4>
+                <a href="../page/Electronics/tv.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/mouse.html"><img src="Images/Electronics/mouse.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Mouse</h3>
+                <h4>INR 999.<small>00</small></h4>
+                <a href="../page/Electronics/mouse.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/mousepad.html"><img src="Images/Electronics/mousepad.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Mouse Pad</h3>
+                <h4>INR 599.<small>00</small></h4>
+                <a href="../page/Electronics/mousepad.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/keyboard.html"><img src="Images/Electronics/keyboard.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Keyboard</h3>
+                <h4>INR 999.<small>00</small></h4>
+                <a href="../page/Electronics/keyboard.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/earbuds.html"><img src="Images/Electronics/earbuds.png" alt="" width="250px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Earbuds</h3>
+                <h4>INR 2599.<small>00</small></h4>
+                <a href="../page/Electronics/earbuds.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/security-camera.html"><img src="Images/Electronics/cctv.png" alt="" width="250px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Security Camera</h3>
+                <h4>INR 3499.<small>00</small></h4>
+                <a href="../page/Electronics/security-camera.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/neckband.html"><img src="Images/Electronics/neckband.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Neckband</h3>
+                <h4>INR 899.<small>00</small></h4>
+                <a href="../page/Electronics/neckband.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/usb.html"><img src="Images/Electronics/usb.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>USB Cable</h3>
+                <h4>INR 99.<small>00</small></h4>
+                <a href="../page/Electronics/usb.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/earphone.html"><img src="Images/Electronics/earphones.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Earphones</h3>
+                <h4>INR 299.<small>00</small></h4>
+                <a href="../page/Electronics/earphone.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/pendrive.html"><img src="Images/Electronics/pendrive.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Pendrive</h3>
+                <h4>INR 2499.<small>00</small></h4>
+                <a href="../page/Electronics/pendrive.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Electronics/analog-watch.html"><img src="Images/Electronics/3.png" alt="" width="200px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Analog Watch</h3>
+                <h4>INR 7999.<small>00</small></h4>
+                <a href="../page/Electronics/analog-watch.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

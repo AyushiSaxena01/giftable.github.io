@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(209, 194, 194);
+        }
+        .wrapper{
+            /* width: 100%;
+            height: 100vh; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background: #0c1022;
+            width: 320px;
+            height: 420px;
+            margin: 10px;
+            box-shadow: 0 0 5PX #6f7172;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            text-align: center !important;
+        }
+        .card::before{
+            background: #f0f6f9;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            top: -50%;
+            transform: skewY(345deg);
+            transition: 0.5s ease-in;
+        }
+        .card:hover::before{
+            top: -70%;
+            transform: skewY(390deg);
+        }
+        .image{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img{
+            max-width: 100%;
+            transition: 0.5s ease-in;
+        }
+        .card:hover .image img{
+            width: 80%;
+        }
+        .about-product{
+            position: absolute;
+            bottom: -50px !important;
+            left: 20%;
+            color: #fff;
+            text-align: center;
+            transition: 0.5s ease-in;
+        }
+        .card:hover .about-product{
+            bottom: 20px !important;
+        }
+        .button{
+            color: #fff;
+            width: 150px;
+            background: darkslategray !important;
+            border-color: #0c1022 !important;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Multipurpose-Stand.html"><img src="Images/Gift/17.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Multipurpose Stand</h3>
+                <h4>INR 599.<small>00</small></h4>
+                <a href="../page/Gift/Multipurpose-Stand.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Rose&Locket.html"><img src="Images/Gift/16.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Rose & Locket</h3>
+                <h4>INR 399.<small>00</small></h4>
+                <a href="../page/Gift/Rose&Locket.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Gift-Bucket.html"><img src="Images/Gift/15.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Gift bucket</h3>
+                <h4>INR 799.<small>00</small></h4>
+                <a href="../page/Gift/Gift-Bucket.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Perfume-set.html"><img src="Images/Gift/12.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Perfumes Set</h3>
+                <h4>INR 2999.<small>00</small></h4>
+                <a href="../page/Gift/Perfume-set.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Foundation.html"><img src="Images/Gift/11.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Foundation</h3>
+                <h4>INR 999.<small>00</small></h4>
+                <a href="../page/Gift/Foundation.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Tree.html"><img src="Images/Gift/2.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Tree Sculpture</h3>
+                <h4>INR 899.<small>00</small></h4>
+                <a href="../page/Gift/Tree.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Buddha.html"><img src="Images/Gift/3.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Buddha</h3>
+                <h4>INR 899.<small>00</small></h4>
+                <a href="../page/Gift/Buddha.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Mug.html"><img src="Images/Gift/4.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Mug</h3>
+                <h4>INR 199.<small>00</small></h4>
+                <a href="../page/Gift/Mug.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Smoke.html"><img src="Images/Gift/5.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Smoke Diffuser</h3>
+                <h4>INR 199.<small>00</small></h4>
+                <a href="../page/Gift/Smoke.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Riding-Couple.html"><img src="Images/Gift/6.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Riding Couple</h3>
+                <h4>INR 399.<small>00</small></h4>
+                <a href="../page/Gift/Riding-Couple.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Photo-Frame.html"><img src="Images/Gift/7.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Photo Frame</h3>
+                <h4>INR 199.<small>00</small></h4>
+                <a href="../page/Gift/Photo-Frame.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/message-frame.html"><img src="Images/Gift/8.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Frame with msg</h3>
+                <h4>INR 299.<small>00</small></h4>
+                <a href="../page/Gift/message-frame.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Cussion.html"><img src="Images/Gift/9.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Cussion</h3>
+                <h4>INR 299.<small>00</small></h4>
+                <a href="../page/Gift/Cussion.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Grooming-kit.html"><img src="Images/Gift/14.png" alt="" width="300px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Grooming Kit</h3>
+                <h4>INR 1999.<small>00</small></h4>
+                <a href="../page/Gift/Grooming-kit.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Wallet,Pen&Bracelet.html"><img src="Images/Gift/1.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Wallet,Pen & Bracelet</h3>
+                <h4>INR 699.<small>00</small></h4>
+                <a href="../page/Gift/Wallet,Pen&Bracelet.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Gift/Scent.html"><img src="Images/Gift/10.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Scent</h3>
+                <h4>INR 999.<small>00</small></h4>
+                <a href="../page/Gift/Scent.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

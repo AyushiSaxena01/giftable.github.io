@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(209, 194, 194);
+        }
+        .wrapper{
+            /* width: 100%;
+            height: 100vh; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background: #0c1022;
+            width: 320px;
+            height: 420px;
+            margin: 10px;
+            box-shadow: 0 0 5PX #6f7172;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            text-align: center !important;
+        }
+        .card::before{
+            background: #f0f6f9;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            top: -50%;
+            transform: skewY(345deg);
+            transition: 0.5s ease-in;
+        }
+        .card:hover::before{
+            top: -70%;
+            transform: skewY(390deg);
+        }
+        .image{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img{
+            max-width: 100%;
+            transition: 0.5s ease-in;
+        }
+        .card:hover .image img{
+            width: 80%;
+        }
+        .about-product{
+            position: absolute;
+            bottom: -50px !important;
+            left: 20%;
+            color: #fff;
+            text-align: center;
+            transition: 0.5s ease-in;
+        }
+        .card:hover .about-product{
+            bottom: 20px !important;
+        }
+        .button{
+            color: white;
+            width: 150px;
+            background: darkslategray  !important;
+            border-color: #0c1022 !important;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/ring.html"><img src="Images/Jewellery/7.png" alt="" width="230px" height="190px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Rings</h3>
+                <h4>INR 399.<small>00</small></h4>
+                <a href="../page/Jewellery/ring.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/couple-rings.html"><img src="Images/Jewellery/8.png" alt="" width="240px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Couple Rings</h3>
+                <h4>INR 599.<small>00</small></h4>
+                <a href="../page/Jewellery/couple-rings.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/golden-earrings.html"><img src="Images/Jewellery/16.png" alt="" width="280px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Gold Earrings</h3>
+                <h4>INR 2299.<small>00</small></h4>
+                <a href="../page/Jewellery/golden-earrings.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/silver-earrings.html"><img src="Images/Jewellery/19.png" alt="" width="250px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Silver Earrings</h3>
+                <h4>INR 1399.<small>00</small></h4>
+                <a href="../page/Jewellery/silver-earrings.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/earrings.html"><img src="Images/Jewellery/18.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Earrings</h3>
+                <h4>INR 499.<small>00</small></h4>
+                <a href="../page/Jewellery/earrings.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/silver-pendant.html"><img src="Images/Jewellery/14.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Silver Pendant</h3>
+                <h4>INR 1799.<small>00</small></h4>
+                <a href="../page/Jewellery/silver-pendant.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/necklace-set.html"><img src="Images/Jewellery/4.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Necklace Set</h3>
+                <h4>INR 899.<small>00</small></h4>
+                <a href="../page/Jewellery/necklace-set.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/gold-pendant.html"><img src="Images/Jewellery/9.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Gold Pendant</h3>
+                <h4>INR 1999.<small>00</small></h4>
+                <a href="../page/Jewellery/gold-pendant.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/gold-necklace.html"><img src="Images/Jewellery/1.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Gold Necklace</h3>
+                <h4>INR 2799.<small>00</small></h4>
+                <a href="../page/Jewellery/gold-necklace.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/heart-pendant.html"><img src="Images/Jewellery/13.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Heart Pendant</h3>
+                <h4>INR 799.<small>00</small></h4>
+                <a href="../page/Jewellery/heart-pendant.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/necklace.html"><img src="Images/Jewellery/12.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Necklace</h3>
+                <h4>INR 599.<small>00</small></h4>
+                <a href="../page/Jewellery/necklace.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/pendant.html"><img src="Images/Jewellery/11.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Pendant</h3>
+                <h4>INR 499.<small>00</small></h4>
+                <a href="../page/Jewellery/pendant.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/pearl-earrings.html"><img src="Images/Jewellery/17.png" alt="" width="250px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Pearl Earrings</h3>
+                <h4>INR 399.<small>00</small></h4>
+                <a href="../page/Jewellery/pearl-earrings.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/gold-chain.html"><img src="Images/Jewellery/15.png" alt="" width="300px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Gold Chain</h3>
+                <h4>INR 999.<small>00</small></h4>
+                <a href="../page/Jewellery/gold-chain.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/payal.html"><img src="Images/Jewellery/21.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Payal</h3>
+                <h4>INR 399.<small>00</small></h4>
+                <a href="../page/Jewellery/payal.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="image">
+                <a href="../page/Jewellery/anklets.html"><img src="Images/Jewellery/20.png" alt="" width="500px" height="210px"></a>
+            </div>
+            <div class="about-product text-center">
+                <h3>Anklet</h3>
+                <h4>INR 499.<small>00</small></h4>
+                <a href="../page/Jewellery/anklets.html"><button class="btn btn-success button">Buy</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

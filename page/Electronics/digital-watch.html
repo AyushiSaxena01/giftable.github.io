@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Watch</title>
+  <link href="../css/style.css" rel="stylesheet" />
+    <link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("../header.html");
+      });
+      $(function () {
+        $("#footer").load("../footer.html");
+      });
+    </script>
+    <style>
+      body{
+        background:  rgb(209, 194, 194);
+      }
+      .contant {
+        display:flex;
+        width:100%;
+        min-height:700px;
+       
+      }
+      .discription {
+        background:  rgb(209, 194, 194);
+        color: black;
+        text-align: center;
+        font-size: larger;
+      }
+      .product {
+        background:   rgb(209, 194, 194);
+      }
+      .image {
+       margin-left: -50px;
+      }
+      .discription {
+        background:   rgb(209, 194, 194);
+        padding-right: 10px;
+      }
+      .properties {
+        text-align: left;
+        margin-right: 2%;
+      }
+      .offers-card {
+        float: left;
+        width: 30%;
+        padding: 0 7px;
+        display:flex;
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 10px;
+        text-align: center;
+        background-color: #f1f1f1;
+        width:200px;
+        margin-bottom:10px;
+        margin-left:50px;
+      }
+      .card:hover {
+        background-color: rgb(125, 105, 18);
+      }
+      .reviews {
+        width:50%;
+      }
+
+      .left {
+        float: left;
+        width: 15%;
+        margin-top: 15px;
+        margin-left: 0px;
+      }
+      .middle {
+        float: left;
+        width: 70%;
+        margin-top: 15px; 
+      }
+      .right {
+        float: right;
+        width: 10%;
+        /* margin-right: 12px; */
+        margin-top: 15px;
+        margin-left: -20px; 
+        text-align: right;
+      }
+      .bar {
+        width:100%;
+        background-color: #f1f1f1;
+        text-align: center;
+        color: #f1f1f1;
+        height:30px;
+      } 
+      .bar-5 { width: 90%; height: 30px; background-color: #ffc107;}
+      .bar-4 { width: 56%; height: 30px; background-color: #ffc107;}
+      .bar-3 { width: 25%; height: 30px; background-color: #ffc107;}
+      .bar-2 { width: 10%; height: 30px; background-color: #ffc107;}
+      .bar-1 { width: 5%; height: 30px; background-color: #ffc107;}
+       
+    
+      .container {
+        display:flex;
+      }
+      .extra {
+        background:   rgb(209, 194, 194);
+      }
+      .bottom {
+        display: flex;
+        background:  rgb(209,194,194);
+        color:black;
+        padding-left:110px;
+      }
+      .checked {
+        color:orange;
+      }
+      
+    </style>
+</head>
+
+<body>
+  <div id="header"></div>  
+  <div class="contant">
+    <!-- Left part of contant -->
+    <div class="product col-md-3" >
+      <div class="image"><img class="image"src="../../Images/Electronics/1.png" width="370px"height="370px"style="margin-left:60px;"></div><br><br>
+      <div style="margin-top: -70px; font-size: 30px;color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹<del>2299</del><small><sub>10% off</sub> &nbsp;&nbsp;</small>₹2070.<small>00</small></div>
+      <div style="margin-top: 10px; margin-left: 80px; "><br>
+        <button type="button" class="btn btn-warning">Add to Cart</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-warning">Buy Now</button><br><br>
+      </div>
+      
+      <div>
+      </div>
+    </div>
+
+    <!-- Middle part of contant -->
+    <div class="discription col-md-7">
+       <div class="properties">
+        <p
+          style="
+            background-color: #0c1022;
+            color: white;
+            padding: 5%;
+            margin-top: 3%;
+            font-size: larger;
+          "
+        >
+          <b>
+            OnePlus Smart Band: 13 Exercise Modes, <br />
+            Blood Oxygen Saturation (SpO2), Heart Rate & Sleep Tracking,<br />
+            5ATM+Water & Dust Resistant( Android & iOS Compatible)<br></b>
+        </p>
+  <pre
+      style="text-align: left;
+            background-color: #0c1022;
+            color:white;
+            margin-top: 1%;
+            padding:3%;
+            "
+        >
+    Operating System        Android, iOS<br>
+    Special Feature         Camera<br>
+    Wireless Type	    2.4 GHz Radio Frequency<br>
+    Screen Size    	    1.1 Inches <br>
+    Battery Life	    14 Hours
+  </pre>
+       </div>
+        <!-- class properties end div -->
+        <br>
+        
+       <div style="margin-left:5%; display:flex;">
+        <p
+          style="
+            text-align: left;
+            color: black;
+            margin-top: 1%;
+            margin-right: 2%;
+          "
+        >
+          <img src="../../Images/card-image/product policies/1.png" width="20px" height="20px">
+          &nbsp; &nbsp;<label for="warranty">1 year warranty</label>
+        </p>
+        <p
+          style="
+            text-align: left;
+            color: black;
+            margin-top: 1%;
+            margin-right: 2%;
+          "
+        >
+        <img src="../../Images/card-image/product policies/2.png" width="20px" height="20px">
+        &nbsp; &nbsp;<label for="return">Return</label>
+        </p>
+        <p
+          style="
+            text-align: left;
+            color: black;
+            margin-top: 1%;
+            margin-right: 2%;
+          "
+        >
+        <img src="../../Images/card-image/product policies/3.png" width="20px" height="20px">
+        &nbsp; &nbsp;<label for="exchange">Exchange</label>
+        </p>
+        <p
+        style="
+          text-align: left;
+          color: black;
+          margin-top: 1%;
+          margin-right: 2%;
+        "
+      >
+        <img src="../../Images/card-image/product policies/4.png"width="20px" height="20px">
+        &nbsp; &nbsp;<label for="cod">Cash on Delivery</label>
+      </div> 
+      <hr>
+       
+     
+      <div class="row" style="margin-right: 12px;">
+        <img
+          src="../../Images/card-image/product policies/discount.png"
+          alt="percent"
+          height="40px"
+          style="
+            width: 50px;
+            margin-left: 38%;
+            margin-top: 5px;
+            margin-bottom: -45px;
+            padding: 5px 5px;
+          "
+        />
+        <h1>Offers</h1>
+        <div class="offers-card">
+          <div class="card">
+            <b>No Cost EMI</b><br />
+            Avail No cost EMI on select cards for purchase above 5000
+          </div>
+          <p></p>
+        </div>
+        <div class="offers-card">
+          <div class="card">
+            <b>Bank Offers</b><br />
+            Upto Rs.80.70 discount on using HDFC bank credit cards
+          </div>
+        </div>
+        <div class="offers-card">
+          <div class="card">
+            <b>Partner Offers</b><br />
+            Get GST invoice and save upto 20% on business purchases.
+          </div>
+        </div>
+      </div>
+         
+    </div>
+    <!-- right part of contant -->
+    <div class="extra col-md-2">
+      <div style="margin-top:10%;  width:100%;line-height: 35px;">
+        <form style=" width:90% ; height:25%; border:1px solid grey ; background-color:rgb(243, 231, 231); " >
+          <div style="margin-left:10px; margin-top:10px;"><h6 style="color:blue"><b>Free delivery </b><small style="color:rgb(62, 69, 67)">Saturday November 28</small><a href="#" style="color:blue">Details</a></h6>
+          Or Fastest delivery by Tomorrow,<small style="color:rgb(62, 69, 67)">November 26</small><br>
+            <img src="https://cdn-icons-png.flaticon.com/512/535/535188.png" width="25px" height="25px"> &nbsp; Select delivery Location<br><br> 
+            <!-- <label>Pin Code</label>--> <input type="text" placeholder="Pin Code"  style=" border-radius:10px"> <br><br>
+            <div class="dropdown">
+              <label>Quantity</label> &nbsp; <button
+                class="btn btn-secondary dropdown-toggle text-black"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false" style="border-radius: 10px; margin-right: 5px; background-color: white;color: black;">1</button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">1</a>
+                <a class="dropdown-item" href="#">2</a>
+                <a class="dropdown-item" href="#">3</a>
+                <a class="dropdown-item" href="#">4</a>
+                <a class="dropdown-item" href="#">5</a>
+              </div>
+            </div><br>
+            <div>
+              <input type="checkbox"><label>Add gift options</label><br>
+              <button class="btn btn-warning">Add to wishlist</button> <br><br>
+            </div>
+          </div> 
+        </form>
+      </div>
+   
+        <br>
+        <br>
+       
+        <div class="question" style="justify-content: center; border:dotted 1px grey;  margin-right: 10%;">
+          <img src="https://cdn-icons-png.flaticon.com/512/2194/2194227.png" width="50px" height="50px">
+          <div style="text-align: left;">
+          <img src="/Images/card-image/product policies/question.png" width="20px" height="20px">
+              <b>Question:</b><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What is your name?<br />
+              <img src="/Images/card-image/product policies/answer.png" width="20px" height="20px">
+              <b>Answer:</b><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  My name is
+              ABC.<br />
+            
+              <img src="/Images/card-image/product policies/question.png" width="20px" height="20px">
+              <b>Question:</b><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  What is your name?<br />
+              <img src="/Images/card-image/product policies/answer.png" width="20px" height="20px">
+              <b>Answer:</b><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  My name is
+              ABC.<br />
+            
+              <img src="/Images/card-image/product policies/question.png" width="20px" height="20px">
+              <b>Question:</b><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  What is your name?<br />
+              <img src="/Images/card-image/product policies/answer.png" width="20px" height="20px">
+              <b>Answer:</b><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  My name is
+              ABC.<br />
+            
+          </div>
+          
+          
+        </div>
+        <br>
+    </div>
+    
+  </div><hr>
+  <!-- class contant end div -->
+
+  <!-- Bottom Part -->
+ <div class="bottom">
+  <div class="reviews">
+    <h1><span class="heading">Reviews</span></h1>
+    <div>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+    </div><br>
+  <div class="row  row1" >
+    <div class="left">
+       <div> 5 star</div>
+    </div>
+    <div class="middle">
+      <div class="bar">
+       <div class="bar-5"></div>
+      </div>
+    </div>
+    <div class="right">
+       <div>98</div>
+    </div>
+    <div class="left">
+      <div> 4 star</div>
+   </div>
+   <div class="middle">
+      <div class="bar">
+      <div class="bar-4"></div>
+      </div>
+    </div>
+    <div class="right">
+      <div>56</div>
+    </div>
+    <div class="left">
+    <div> 3 star</div>
+  </div>
+     <div class="middle">
+       <div class="bar">
+        <div class="bar-3"></div>
+       </div>
+     </div>
+     <div class="right">
+        <div>32</div>
+     </div>
+     <div class="left">
+      <div> 2 star</div>
+    </div>
+    <div class="middle">
+     <div class="bar">
+      <div class="bar-2"></div>
+     </div>
+    </div>
+    <div class="right">
+      <div>25</div>
+    </div>
+    <div class="left">
+      <div> 1 star</div>
+    </div>
+    <div class="middle">
+     <div class="bar">
+      <div class="bar-1"></div>
+     </div>
+     </div>
+     <div class="right">
+       <div>10</div>
+     </div>
+
+   </div><!--class row end div -->
+
+  </div><!--class reviews end div -->
+  <hr />
+  <div class="customer-reviews"><h1>Customer Reviews</h1>
+    <div style="justify-content: left; display: flex;">
+      <img src="../../Images/1.jpg" width="30px" height="30px">
+      &nbsp;  <h5>Lisa</h5>
+      &nbsp; &nbsp; &nbsp; &nbsp;<b>Good Quality</b>
+      &nbsp; &nbsp; <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star "></span>
+      <span class="fa fa-star"></span><br>
+    </div>
+    <div style="text-align:left">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.Fuga, eum
+      <br> totam ipsum corporis voluptates adipisci aspernatur nobis 
+      <br> quod libero dolor ea animi? Quis maiores sunt distinctio in
+      <br> placeat minus est!
+    </div><br>
+    <div style="justify-content: left; display: flex;">
+      <img src="../../Images/2.jpg_large" width="30px" height="30px">
+      &nbsp;  <h5>Lauren</h5>
+      &nbsp; &nbsp; &nbsp; &nbsp;<b>Good Quality , Worth the price</b>
+      &nbsp; &nbsp; <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+    </div>
+    <div style="text-align:left">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.Fuga, eum totam ipsum corporis 
+      <br>voluptates adipisci aspernatur nobis 
+      <br> quod libero dolor ea animi? Quis maiores sunt distinctio in
+      <br> placeat minus est!
+    </div><br>
+    <div  style="text-align:left">
+    <h4>Add a review</h4>
+      <span style="cursor: pointer;">😡</span>
+      <span style="cursor: pointer;">😊</span>
+      <span style="cursor: pointer;">🥰</span>
+      <span style="cursor: pointer;">🤩</span><br>
+      <textarea class="text" placeholder="Write your review" rows="3"></textarea>
+    </div>
+  </div>
+  <!-- class customer reviews end div --> 
+      </div>
+</div><hr>
+ <div class="container" >
+  <div style=" margin-left: 19%; ">
+    <img
+      class="card-img-top"
+      src="../../Images/card-image/product policies/returnpolicy.png"
+      alt="Card image cap"
+      width="100px"
+      height="100px"
+    />
+  </div>
+  <div style="margin-left: 5%">
+    <img
+      class="card-img-top"
+      src="../../Images/card-image/product policies/cod.png"
+      alt="Card image cap"
+      width="100px"
+      height="100px"
+    />
+  </div>
+  <div style="margin-left: 5%">
+    <img
+      class="card-img-top"
+      src="../../Images/card-image/product policies/warranty.png"
+      alt="Card image cap"
+      width="120px"
+      height="110px"
+    />
+  </div>
+  <div style="margin-left: 5%">
+    <img
+      class="card-img-top"
+      src="../../Images/card-image/product policies/paymentoptions.png"
+      alt="Card image cap"
+      width="100px"
+      height="100px"
+    />
+  </div>
+</div>
+</div>
+  <div id="footer"></div>  
+</body>
+</html>

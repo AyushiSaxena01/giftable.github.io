@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's Deals</title>
+    
+    <link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#header').load('resource/header.html');
+        });
+        $(function(){
+            $('#items').load('resource/cards/today-card.html');
+        });
+        $(function(){
+            $('#footer').load('resource/footer.html');
+        });
+    </script>
+    <style>
+        body{
+            background-color: rgb(209, 194, 194);
+        }
+        .four-0-four-image{
+            display: block;
+            margin: 60px auto;
+        }
+        .four-0-four-msg{
+            text-align: center;
+            text-transform: capitalize;
+            color: #383838;
+        }
+        .four-0-four-msg a{
+            color: #383838;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <img src="Images/404.png" class="four-0-four-image" alt="">
+    <p class="four-0-four-msg">look like you are lost. Head to beack to our <a href="index.html" style="color: blue;">homepage</a></p>
+    <!-- <div id="items"></div> -->
+    <div id="footer"></div>

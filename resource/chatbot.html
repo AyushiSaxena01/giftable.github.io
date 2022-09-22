@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP & SAVE</title>
+    <link href="../css/bot.css" rel="stylesheet" />
+    <link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("../page/header.html");
+      });
+      $(function () {
+        $("#footer").load("../page/footer.html");
+      });
+    </script>
+    </head>
+    <body style="background-color: rgb(209, 194, 194);">
+        <div id="header"></div>
+        <div style="display: flex;">
+            <div class="chat">
+                <h1>Ask Your Question??</h1>
+                <h2>Hello welcome here</h2>
+                <div class="input">
+                    <input
+                        type="text"
+                        id="userBox"
+                        onkeydown="if(event.keyCode == 13){ talk()}"
+                        placeholder="Type your Question"
+                        />
+                </div> 
+                <p id="chatLog">Answer Appearing Hear</p>
+            </div>
+            <div class="chat" style="margin-left:100px">
+                <div style="margin-left:10px;margin-top:20px;display:flex;"><img class="circular" src="../Images/Ayushii.jpg" width="100px" height="150px">
+                    <pre style="margin-top: -20px; color: rgb(41, 40, 40)">
+                        <h1><b><U>AYUSHI SAXENA</U></b><br> Designer & Developer</h1> <i class="fa fa-envelope"></i> sayushi0701@gmail.com <br> <i class="fa fa-instagram"></i> ayushii_121 <br> <i class="fa fa-linkedin"></i> Ayushi Saxena <br> &#9742 +91 8851745541
+                    </pre>
+                </div>
+                <div style="margin-left:10px;margin-top:20px;display:flex;"><img  class="circular" src="../Images/Shashank.jpg" width="100px" height="150px">
+                    <pre style="margin-top: -20px; color: rgb(41, 40, 40)"">
+                        <h1><b><U>SHASHANK VATS</U></b><br> Designer & Developer</h1> <i class="fa fa-envelope"></i> shashankvats2112@gmail.com <br> <i class="fa fa-instagram"></i> shashsank_vats21 <br> <i class="fa fa-linkedin"></i> Shashank Vats <br> &#9742 +91 9027659714
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+        <div id="footer"></div>
+    </body>
+</html>
